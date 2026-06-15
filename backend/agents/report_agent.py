@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv()
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-1.5-flash-latest")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-pro")
 
 REPORT_PROMPT = """You are an expert industrial maintenance report writer for Tata Steel.
 Generate a professional, structured maintenance report based on the provided data.
