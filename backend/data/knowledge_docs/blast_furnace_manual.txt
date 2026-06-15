@@ -1,0 +1,210 @@
+BLAST FURNACE (BF-SERIES) EQUIPMENT MAINTENANCE MANUAL
+Tata Steel Maintenance Wizard — Knowledge Base Document
+Version: 3.2 | Effective Date: 01-Jan-2026 | Review Cycle: Annual
+================================================================
+
+1. INTRODUCTION AND EQUIPMENT SPECIFICATIONS
+============================================
+
+The BF-Series blast furnaces (BF-01 and BF-02) are the primary iron-making units at the Tata Steel facility. Each furnace is a high-pressure, counter-current reactor in which iron ore, coke, and limestone are reduced and melted to produce hot metal (pig iron) for downstream steelmaking.
+
+BF-01 and BF-02 — Key Design Parameters:
+  Inner Working Volume   : 1,000 m³
+  Total Height (shell)   : 32 metres
+  Hearth Diameter        : 10.5 metres
+  Tap Hole Diameter      : 50 mm (nominal)
+  Number of Tuyeres      : 28
+  Daily Hot Metal Output : ~5,000 tonnes (design target)
+  Campaign Life          : 15 years (with copper stave cooling)
+  Slag Rate              : ~280 kg / tonne of hot metal
+  Coke Rate              : ~380 kg / tonne of hot metal
+
+Both furnaces are equipped with a bell-less top charging system (Paul Wurth design), enabling precise burden distribution and reduced gas leakage. Each furnace is served by three hot blast stoves (Kalugin type) providing preheated blast to the tuyeres.
+
+
+2. NORMAL OPERATING PARAMETERS
+===============================
+
+Blast System:
+  Hot Blast Temperature        : 1,150–1,250°C (target 1,200°C)
+  Cold Blast Pressure          : 3.8–4.2 bar (g)
+  Hot Blast Pressure at Bustle : 3.5–4.5 bar (g)
+  Blast Volume                 : 2,800–3,200 Nm³/min
+  Oxygen Enrichment            : 3–6% (above ambient 21%)
+  Moisture Content (max)       : 20 g/Nm³
+
+Top Gas System:
+  Top Gas Pressure             : 2.0–2.4 bar (g) (target 2.2 bar)
+  Top Gas Temperature          : 100–200°C
+  Top Gas Composition (typical): CO 23%, CO₂ 22%, N₂ 53%, H₂ 2%
+  Calorific Value              : 3.0–3.5 MJ/Nm³
+
+Burden Charge (per charge cycle):
+  Iron Ore Sinter / Pellets    : 75–80% by weight
+  Metallurgical Coke           : 15–20% by weight
+  Limestone / Dolomite         : 4–6% by weight
+  Charge Weight (per skip)     : ~12 tonnes
+
+Hearth Operations:
+  Tapping Frequency            : Every 90–120 minutes
+  Cast Duration                : 45–65 minutes per tap
+  Hot Metal Temperature        : 1,480–1,520°C
+  Hot Metal Si Content (target): 0.3–0.6%
+
+
+3. CRITICAL SENSORS AND ALARM THRESHOLDS
+=========================================
+
+All sensor data is fed in real time to the plant DCS (Distributed Control System) and to the Maintenance Wizard AI platform for anomaly analysis.
+
+3.1 Tuyere Tip Temperature (via pyrometer, 28 tuyeres)
+  Normal Range  : 150–200°C
+  Warning Level : ≥ 220°C  → Initiate investigation within 30 minutes
+  Critical Level: ≥ 280°C  → Initiate emergency cooling / tuyere isolation
+
+3.2 Bustle Pipe Pressure (differential transmitter)
+  Normal Range  : 3.5–4.5 bar (g)
+  Warning Level : ≥ 4.8 bar  → Reduce blast volume by 5%; check burden permeability
+  Critical Level: ≥ 5.2 bar  → Trip blast; initiate pressure relief protocol
+
+3.3 Cooling Water Outlet Temperature (stave cooling circuit, per panel)
+  Normal Range  : 35–50°C (delta T across stave ≤ 8°C)
+  Warning Level : ≥ 55°C outlet OR delta T ≥ 12°C
+  Critical Level: ≥ 65°C outlet OR delta T ≥ 18°C → Isolate panel; emergency grouting
+
+3.4 Hot Blast Stove Fan Vibration (accelerometer on fan bearing housing)
+  Normal Range  : 0.5–2.5 mm/s (RMS)
+  Warning Level : ≥ 3.5 mm/s → Schedule bearing inspection within 7 days
+  Critical Level: ≥ 6.0 mm/s → Shutdown fan; switch to standby stove
+
+3.5 Shell Temperature (infrared scanner, 360° scan)
+  Normal Baseline: 80–120°C on shell external surface
+  Warning Level  : +50°C above established baseline at any point
+  Critical Level : +80°C above baseline → Immediate investigation for hot spot
+
+3.6 Top Gas Temperature Deviation
+  Normal         : Uniform within ±15°C circumferentially
+  Warning        : Any sector > ±30°C deviation → Burden distribution check
+
+
+4. COMMON FAILURE MODES AND ROOT CAUSES
+=========================================
+
+4.1 TUYERE BLOCKAGE
+-------------------
+Root Causes:
+  a) Iron skull formation due to locally low temperature in the raceway
+  b) Coke quality deterioration (high reactivity index CRI > 30%)
+  c) Incomplete combustion — O₂ supply fluctuation
+  d) Tuyere tip erosion leading to gas flow maldistribution
+
+Symptoms:
+  - Sharp pressure spike (>0.3 bar above average) on affected tuyere
+  - Temperature drop in the blocked zone (pyrometer reading drops >40°C)
+  - Asymmetric top gas temperature (deviation >40°C on corresponding sector)
+  - Visual: no flame visible through tuyere peephole during blow-in
+
+Maintenance Action:
+  - Reduce blast volume to safe working level (70% of nominal)
+  - Use oxygen lance to clear blockage from tuyere stock
+  - If skull is hard: pull tuyere, remove skull manually, replace tuyere tip
+  - Check coke quality report; coordinate with raw materials team
+
+4.2 REFRACTORY EROSION
+----------------------
+Root Causes:
+  a) Thermal cycling during operations and planned shutdowns
+  b) Alkali attack (K₂O, Na₂O from ore burden) at 800–1,000°C zone
+  c) CO attack: 2CO → CO₂ + C (carbon deposition in pores)
+  d) Mechanical abrasion from burden descent
+
+Symptoms:
+  - External shell temperature increase ≥ 50°C above long-term baseline
+  - Infrared hot-spot cluster visible on scanner
+  - Cooling water delta T increase without change in blast conditions
+  - In extreme cases: shell cracking or steam emission
+
+Maintenance Action:
+  - Confirm with thermal scanner and ultrasonic lining thickness measurement
+  - Apply emergency copper stave external cooling sprays
+  - Schedule gunning repair at next planned stop (titania-magnesia castable)
+  - Long-term: plan partial reline campaign for affected zone
+
+4.3 COOLING STAVE FAILURE
+--------------------------
+Root Causes:
+  a) Progressive wear reducing stave wall thickness below 20 mm
+  b) Reduction in cooling water flow due to scaling or blockage
+  c) Thermal shock from sudden burden slip events
+  d) Mechanical damage from scaffold collapse
+
+Symptoms:
+  - Outlet water temperature spike ≥ 10°C above baseline (sudden onset)
+  - Water flow meter reading drop ≥ 15% on affected panel
+  - Steam or discoloured water at outlet header
+  - In stave failure: water ingress into furnace (hydrogen hazard)
+
+Maintenance Action:
+  - Immediately increase cooling water flow to maximum
+  - Isolate failed stave panel from common header
+  - Insert grout (colloidal silica or mineral slurry) into stave cavity
+  - Plan stave replacement during next campaign stop
+
+4.4 SCAFFOLD FORMATION
+-----------------------
+Root Causes:
+  a) Poor burden distribution — excessive wall-flow of gas
+  b) Low permeability zone caused by coke with high sulphur content
+  c) Zinc and alkali deposition on burden (recycled materials)
+  d) Temperature inversion in upper shaft — burden sticking
+
+Symptoms:
+  - Irregular burden descent (descent rate < 0.5 m/h)
+  - Top gas CO₂ profile becomes non-uniform
+  - Hanging of burden — followed by sudden slip
+  - Pressure fluctuation patterns in DCS
+
+Maintenance Action:
+  - Reduce coke rate to promote additional heat in scaffold zone
+  - Adjust burden distribution using bell-less top set-points
+  - Controlled slip procedure (supervised blast reduction sequence)
+  - In severe cases: injection of scaffold-breaking charges
+
+
+5. EMERGENCY SHUTDOWN SOP
+===========================
+
+Step 1  : Notify Blast Furnace Shift Manager and Plant Control Room.
+Step 2  : Confirm reason for shutdown — document trigger event in DCS log.
+Step 3  : Reduce blast volume to 50% of operational rate within 2 minutes.
+Step 4  : Shut off oxygen enrichment supply to cold blast main.
+Step 5  : Close bustle pipe isolation butterfly valve (motorised, PLC-commanded).
+Step 6  : Continue all cooling water circuits at full flow — DO NOT isolate.
+Step 7  : Maintain top gas pressure at 2.2 bar to prevent air ingress — do not open relief valves prematurely.
+Step 8  : Initiate holding charge (protective coke charge) via bell-less top.
+Step 9  : Inform cast house — tap open heats to clear hearth.
+Step 10 : After blast is off, purge tuyere stocks with nitrogen for 15 minutes.
+Step 11 : Allow furnace to bank — maintain minimum nitrogen purge to prevent air ingress.
+Step 12 : Issue work permit system (Permit to Work) before any human entry.
+Step 13 : Log all events with timestamps in the incident report system.
+
+
+6. SPARE PARTS LIST — BF-01 / BF-02
+======================================
+
+| Part Description                  | Part Number    | Lead Time | Criticality | Stock Policy       |
+|-----------------------------------|----------------|-----------|-------------|--------------------|
+| Tuyere copper nose assembly       | BF-TYR-001     | 4 weeks   | A           | Min 4 on site      |
+| Tuyere blowpipe (complete)        | BF-TYR-002     | 6 weeks   | A           | Min 2 on site      |
+| Cooling stave (copper, wall zone) | BF-STW-010     | 16 weeks  | A           | Min 2 per zone     |
+| Bustle pipe expansion joint       | BF-BPJ-005     | 10 weeks  | A           | Min 1 on site      |
+| Hot blast stove fan bearing       | BF-FAN-BRG-01  | 3 weeks   | B           | Min 2 sets on site |
+| Top gas bleeder valve seal kit    | BF-BGV-SK01    | 2 weeks   | B           | Min 3 kits         |
+| Skip winch wire rope              | BF-SKP-WR01    | 2 weeks   | B           | 1 coil on site     |
+| Thermocouple (K-type, shielded)   | BF-TC-001      | 1 week    | C           | Min 20 on site     |
+| Tap hole drill bit (carbide)      | BF-TH-DB01     | 1 week    | C           | Min 10 on site     |
+| Pressure transmitter (0–6 bar)    | BF-PT-006      | 3 weeks   | B           | Min 3 on site      |
+
+Criticality Classification: A = Safety-critical / long lead time; B = Production-critical; C = Routine consumable
+
+Document Control: This manual is to be reviewed annually by the Blast Furnace Engineering Team. Any deviation from procedures must be approved by the Shift General Manager and documented in the Management of Change (MoC) register.

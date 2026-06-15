@@ -1,0 +1,121 @@
+log_id,timestamp,equipment_id,fault_description,delay_hours,severity,maintenance_action,parts_replaced,technician,resolution_status,cost_inr
+LOG-0009,2026-03-16 19:23:28,RM-02,Loopers not responding; strip tension lost,29.93,High,Pressure valve adjustment,Coupling spider insert,Neha Desai,Resolved,149928
+LOG-0020,2026-03-17 00:51:28,RM-01,Water descaler pressure dropped to 120 bar; scale marks on strip,21.67,Medium,Sensor calibration,None,Anita Sharma,Resolved,60504
+LOG-0097,2026-03-18 10:37:28,COMP-01,Inter-stage pressure ratio abnormal; valve suspected,5.66,Medium,Sensor calibration,Contactor and overload relay,Vikram Singh,In-Progress,31629
+LOG-0084,2026-03-19 05:50:28,RM-01,Work roll surface cracks detected during inspection,4.96,Critical,Motor rewinding,Coupling spider insert,Sanjay Thakur,Pending,404784
+LOG-0025,2026-03-19 23:12:28,CONV-01,Drive reducer oil level critically low; less than 30%,1.09,Critical,Belt alignment,Oil filter cartridge,Rajendra Gupta,Resolved,431362
+LOG-0116,2026-03-20 12:58:28,COMP-01,Oil separator element saturated; oil carryover detected,2.38,Low,Electrical inspection,Deep groove ball bearing (SKF 6205),Suresh Patel,In-Progress,19596
+LOG-0023,2026-03-20 18:05:28,BF-01,Slag runner blockage causing furnace pressure fluctuation,1.66,Low,Bearing replacement,Pressure relief valve,Vikram Singh,Resolved,16073
+LOG-0090,2026-03-20 23:49:28,BF-01,Abnormal burden distribution; stock descent irregular,10.52,Medium,Sensor calibration,Vibration dampener pad,Kavitha Rajan,Resolved,56051
+LOG-0031,2026-03-22 10:44:28,BF-01,Refractory lining erosion observed near hearth zone,26.21,High,Belt alignment,Contactor and overload relay,Harish Pandey,Pending,256467
+LOG-0102,2026-03-23 18:16:28,PUMP-02,Mechanical seal leaking; coolant loss approx 5 L/hr,1.34,Low,Electrical inspection,Pressure relief valve,Arvind Yadav,Resolved,8721
+LOG-0115,2026-03-25 03:26:28,COMP-01,Inlet air filter choked; differential pressure >50 mbar,1.64,Low,Sensor calibration,Temperature sensor (PT100),Suresh Patel,Resolved,24927
+LOG-0067,2026-03-25 19:04:28,COMP-02,Inter-stage pressure ratio abnormal; valve suspected,46.41,High,Pressure valve adjustment,Drive belt set,Priya Nair,Resolved,139849
+LOG-0075,2026-03-26 11:41:28,RM-02,"Edger motor vibration at 7.2 mm/s, threshold 5 mm/s",1.87,Low,Electrical inspection,Drive belt set,Neha Desai,Resolved,8498
+LOG-0047,2026-03-26 23:18:28,COMP-01,Oil separator element saturated; oil carryover detected,57.71,High,Bearing replacement,Cooling water pump impeller,Deepak Joshi,Resolved,223356
+LOG-0079,2026-03-27 08:06:28,CONV-02,Belt slipping on drive pulley; production stopped,30.27,High,Electrical inspection,Coupling spider insert,Mohan Pillai,Resolved,165155
+LOG-0050,2026-03-28 04:34:28,RM-01,"Edger motor vibration at 7.2 mm/s, threshold 5 mm/s",2.62,Low,Sensor calibration,None,Neha Desai,Resolved,18949
+LOG-0101,2026-03-28 08:40:28,BF-02,Tuyere blockage detected; hot blast flow reduced by 18%,11.66,Medium,Belt alignment,Deep groove ball bearing (SKF 6205),Suresh Patel,Resolved,90995
+LOG-0003,2026-03-28 18:19:28,BF-01,Abnormal burden distribution; stock descent irregular,1.33,Critical,Electrical inspection,None,Vikram Singh,In-Progress,395156
+LOG-0069,2026-03-28 21:52:28,BF-01,Cooling stave showing elevated outlet temperature,23.59,Medium,Sensor calibration,Mechanical seal kit,Sunita Mehta,In-Progress,56303
+LOG-0091,2026-04-01 19:00:28,BF-02,Slag runner blockage causing furnace pressure fluctuation,8.41,Medium,Electrical inspection,Hydraulic hose assembly,Harish Pandey,Resolved,91734
+LOG-0026,2026-04-02 14:39:28,PUMP-02,Cavitation noise observed; inlet suction pressure low,2.37,Low,Belt alignment,Hydraulic hose assembly,Mohan Pillai,Resolved,10438
+LOG-0019,2026-04-02 14:41:28,COMP-02,Oil separator element saturated; oil carryover detected,2.58,Critical,Motor rewinding,Vibration dampener pad,Geeta Iyer,In-Progress,417729
+LOG-0051,2026-04-02 18:09:28,COMP-01,Pressure safety valve lifted prematurely at 8.2 bar,12.5,Medium,Belt alignment,Cooling water pump impeller,Anita Sharma,In-Progress,30974
+LOG-0100,2026-04-03 03:13:28,BF-01,Bell seal leakage; top gas pressure dropped to 0.8 bar,60.14,High,Bearing replacement,Drive belt set,Deepak Joshi,Resolved,262197
+LOG-0039,2026-04-03 05:31:28,BF-01,Stove dome temperature exceeded 1350 deg C alarm threshold,3.19,Low,Sensor calibration,Pressure relief valve,Priya Nair,Resolved,24806
+LOG-0111,2026-04-03 05:35:28,RM-01,Main motor overload trip; current reached 320 A,25.98,High,Pressure valve adjustment,Cooling water pump impeller,Suresh Patel,Pending,203002
+LOG-0042,2026-04-05 06:11:28,PUMP-02,Mechanical seal leaking; coolant loss approx 5 L/hr,15.92,Medium,Sensor calibration,Mechanical seal kit,Kavitha Rajan,Resolved,72648
+LOG-0082,2026-04-06 04:35:28,BF-01,Refractory lining erosion observed near hearth zone,12.3,Medium,Oil refill,Pressure relief valve,Sanjay Thakur,Resolved,78488
+LOG-0113,2026-04-06 17:42:28,BF-02,Stove dome temperature exceeded 1350 deg C alarm threshold,2.6,Critical,Pressure valve adjustment,Contactor and overload relay,Harish Pandey,Resolved,281126
+LOG-0034,2026-04-06 20:00:28,PUMP-02,Impeller wear detected; pump efficiency dropped 14%,10.23,Medium,Electrical inspection,Pressure relief valve,Suresh Patel,In-Progress,74400
+LOG-0033,2026-04-06 22:28:28,BF-02,Refractory lining erosion observed near hearth zone,14.28,Medium,Bearing replacement,Vibration dampener pad,Rajendra Gupta,Resolved,57077
+LOG-0012,2026-04-07 09:25:28,BF-02,Tuyere blockage detected; hot blast flow reduced by 18%,47.89,High,Oil refill,Deep groove ball bearing (SKF 6205),Sunita Mehta,In-Progress,250717
+LOG-0040,2026-04-07 19:38:28,BF-02,Refractory lining erosion observed near hearth zone,5.42,Medium,Belt alignment,Oil filter cartridge,Mohan Pillai,Pending,69600
+LOG-0110,2026-04-08 00:52:28,PUMP-01,Motor coupling misalignment; vibration at 6.8 mm/s,53.69,High,Oil refill,Contactor and overload relay,Anita Sharma,Resolved,162151
+LOG-0036,2026-04-08 07:04:28,COMP-02,Motor insulation resistance low; rewinding recommended,20.35,Medium,Belt alignment,Drive belt set,Arvind Yadav,Resolved,117933
+LOG-0022,2026-04-11 16:43:28,COMP-01,Inlet air filter choked; differential pressure >50 mbar,27.26,High,Oil refill,Drive belt set,Sanjay Thakur,Resolved,198718
+LOG-0096,2026-04-12 08:36:28,COMP-02,Screw element clearance excessive; volumetric efficiency low,0.64,Low,Bearing replacement,Hydraulic hose assembly,Ramesh Kumar,In-Progress,20422
+LOG-0027,2026-04-13 02:40:28,RM-01,Work roll surface cracks detected during inspection,9.43,Medium,Belt alignment,Coupling spider insert,Ramesh Kumar,In-Progress,41377
+LOG-0049,2026-04-13 12:36:28,PUMP-01,"Bearing overheating; temperature at 92 deg C, limit 85 deg C",1.08,Critical,Bearing replacement,Mechanical seal kit,Mohan Pillai,Pending,469095
+LOG-0108,2026-04-13 15:21:28,RM-02,Loopers not responding; strip tension lost,55.48,High,Motor rewinding,Vibration dampener pad,Arvind Yadav,Pending,205540
+LOG-0072,2026-04-14 20:38:28,PUMP-01,Air ingress at suction flange; flow rate reduced,3.79,Low,Bearing replacement,Oil filter cartridge,Neha Desai,Resolved,21078
+LOG-0037,2026-04-16 02:49:28,CONV-02,Belt rip detected by rip detector; auto-stop triggered,17.69,Medium,Cooling system flush,Contactor and overload relay,Priya Nair,Resolved,91001
+LOG-0099,2026-04-16 11:23:28,COMP-02,Screw element clearance excessive; volumetric efficiency low,3.55,Low,Motor rewinding,Pressure relief valve,Sanjay Thakur,Resolved,25539
+LOG-0008,2026-04-17 15:06:28,COMP-02,Screw element clearance excessive; volumetric efficiency low,3.25,Critical,Motor rewinding,Hydraulic hose assembly,Arvind Yadav,Pending,326892
+LOG-0098,2026-04-17 15:16:28,RM-02,Roll gap deviation of +2.3 mm detected by AGC system,1.57,Low,Bearing replacement,Contactor and overload relay,Mohan Pillai,Resolved,28045
+LOG-0054,2026-04-17 17:06:28,BF-02,Taphole clay failure; iron spillage risk,61.37,High,Bearing replacement,Temperature sensor (PT100),Rajendra Gupta,Pending,242912
+LOG-0074,2026-04-18 00:22:28,CONV-01,Idler roller seized on return strand; belt damage,3.86,Low,Belt alignment,Oil filter cartridge,Geeta Iyer,In-Progress,7636
+LOG-0118,2026-04-20 00:53:28,BF-01,Stove dome temperature exceeded 1350 deg C alarm threshold,21.76,Medium,Cooling system flush,Cooling water pump impeller,Neha Desai,Resolved,84475
+LOG-0045,2026-04-20 11:05:28,CONV-02,Belt joint failure; belt came off pulley,3.7,Low,Oil refill,Vibration dampener pad,Sanjay Thakur,Resolved,14979
+LOG-0041,2026-04-20 20:27:28,COMP-02,Screw element clearance excessive; volumetric efficiency low,10.81,Medium,Sensor calibration,Hydraulic hose assembly,Suresh Patel,Resolved,107460
+LOG-0093,2026-04-23 04:15:28,PUMP-01,Cavitation noise observed; inlet suction pressure low,3.48,Low,Oil refill,Pressure relief valve,Suresh Patel,Resolved,20026
+LOG-0094,2026-04-23 17:32:28,PUMP-02,"Bearing overheating; temperature at 92 deg C, limit 85 deg C",3.49,Low,Pressure valve adjustment,Vibration dampener pad,Rajendra Gupta,Resolved,7833
+LOG-0059,2026-04-23 21:48:28,COMP-01,Inter-stage pressure ratio abnormal; valve suspected,63.44,High,Pressure valve adjustment,Vibration dampener pad,Harish Pandey,Resolved,250010
+LOG-0044,2026-04-26 14:27:28,BF-01,Tuyere blockage detected; hot blast flow reduced by 18%,2.09,Low,Pressure valve adjustment,Motor winding coil,Anita Sharma,In-Progress,14551
+LOG-0068,2026-04-27 21:42:28,PUMP-01,Motor coupling misalignment; vibration at 6.8 mm/s,27.55,High,Oil refill,Pressure relief valve,Sanjay Thakur,Pending,136355
+LOG-0117,2026-04-28 21:40:28,COMP-01,Discharge air temperature at 115 deg C; trip limit 120 deg C,18.32,Medium,Belt alignment,Hydraulic hose assembly,Anita Sharma,Resolved,86052
+LOG-0048,2026-04-29 20:54:28,CONV-01,Conveyor belt tracking off-centre by 80 mm,7.76,Medium,Pressure valve adjustment,Contactor and overload relay,Anita Sharma,Resolved,80410
+LOG-0073,2026-05-03 12:44:28,BF-02,Stove dome temperature exceeded 1350 deg C alarm threshold,22.7,Medium,Cooling system flush,Vibration dampener pad,Rajendra Gupta,Resolved,77045
+LOG-0010,2026-05-03 15:08:28,PUMP-02,"Bearing overheating; temperature at 92 deg C, limit 85 deg C",0.65,Low,Motor rewinding,Oil filter cartridge,Deepak Joshi,Pending,10599
+LOG-0017,2026-05-03 17:37:28,PUMP-02,Air ingress at suction flange; flow rate reduced,30.46,High,Cooling system flush,Drive belt set,Sunita Mehta,In-Progress,191938
+LOG-0024,2026-05-03 19:13:28,CONV-02,Belt rip detected by rip detector; auto-stop triggered,66.82,High,Pressure valve adjustment,Motor winding coil,Sunita Mehta,Pending,260763
+LOG-0119,2026-05-04 07:04:28,CONV-01,Idler roller seized on return strand; belt damage,46.78,High,Pressure valve adjustment,Cooling water pump impeller,Priya Nair,Resolved,257705
+LOG-0043,2026-05-04 18:22:28,CONV-02,Idler roller seized on return strand; belt damage,2.59,Low,Cooling system flush,Motor winding coil,Geeta Iyer,In-Progress,17416
+LOG-0038,2026-05-04 19:32:28,RM-01,Loopers not responding; strip tension lost,68.03,High,Motor rewinding,Pressure relief valve,Neha Desai,Pending,206594
+LOG-0081,2026-05-05 03:15:28,PUMP-02,Air ingress at suction flange; flow rate reduced,51.65,High,Belt alignment,Mechanical seal kit,Mohan Pillai,In-Progress,156001
+LOG-0064,2026-05-05 17:03:28,CONV-01,Conveyor belt tracking off-centre by 80 mm,17.55,Medium,Electrical inspection,Oil filter cartridge,Arvind Yadav,Resolved,53583
+LOG-0032,2026-05-05 19:21:28,BF-01,Abnormal burden distribution; stock descent irregular,9.73,Medium,Belt alignment,Cooling water pump impeller,Vikram Singh,Resolved,99767
+LOG-0004,2026-05-05 21:24:28,PUMP-02,Air ingress at suction flange; flow rate reduced,53.18,High,Motor rewinding,None,Ramesh Kumar,In-Progress,219713
+LOG-0029,2026-05-06 23:54:28,BF-01,Cooling stave showing elevated outlet temperature,47.21,High,Electrical inspection,Temperature sensor (PT100),Harish Pandey,In-Progress,257266
+LOG-0055,2026-05-07 10:13:28,CONV-02,Belt joint failure; belt came off pulley,4.71,Medium,Oil refill,Drive belt set,Anita Sharma,Resolved,108334
+LOG-0104,2026-05-08 19:24:28,PUMP-02,Mechanical seal leaking; coolant loss approx 5 L/hr,17.57,Medium,Sensor calibration,Coupling spider insert,Rajendra Gupta,Resolved,99843
+LOG-0106,2026-05-08 20:20:28,RM-01,Water descaler pressure dropped to 120 bar; scale marks on strip,23.04,Medium,Pressure valve adjustment,Cooling water pump impeller,Rajendra Gupta,Resolved,32975
+LOG-0011,2026-05-09 13:52:28,RM-01,Roll bearing temperature exceeded 95 deg C on drive side,3.06,Low,Motor rewinding,Drive belt set,Priya Nair,Resolved,19622
+LOG-0006,2026-05-09 19:53:28,CONV-01,Material spillage at transfer chute; chute blocked,3.2,Critical,Bearing replacement,Cooling water pump impeller,Priya Nair,Resolved,359838
+LOG-0105,2026-05-10 07:57:28,PUMP-02,Mechanical seal leaking; coolant loss approx 5 L/hr,27.85,High,Electrical inspection,Contactor and overload relay,Suresh Patel,In-Progress,166875
+LOG-0103,2026-05-11 08:59:28,COMP-02,Inlet air filter choked; differential pressure >50 mbar,36.83,High,Belt alignment,Temperature sensor (PT100),Harish Pandey,In-Progress,230869
+LOG-0070,2026-05-13 07:01:28,CONV-02,Material spillage at transfer chute; chute blocked,0.87,Low,Electrical inspection,Vibration dampener pad,Mohan Pillai,Resolved,19469
+LOG-0063,2026-05-13 13:26:28,COMP-01,Pressure safety valve lifted prematurely at 8.2 bar,9.34,Medium,Oil refill,Temperature sensor (PT100),Priya Nair,In-Progress,42882
+LOG-0065,2026-05-14 04:01:28,BF-01,Refractory lining erosion observed near hearth zone,40.87,High,Cooling system flush,Motor winding coil,Sunita Mehta,Resolved,194265
+LOG-0005,2026-05-14 17:29:28,COMP-02,Discharge air temperature at 115 deg C; trip limit 120 deg C,20.54,Medium,Cooling system flush,Contactor and overload relay,Sunita Mehta,Resolved,35560
+LOG-0095,2026-05-14 23:36:28,RM-02,Work roll surface cracks detected during inspection,18.72,Medium,Bearing replacement,Coupling spider insert,Deepak Joshi,In-Progress,62330
+LOG-0076,2026-05-15 18:39:28,CONV-02,Conveyor belt tracking off-centre by 80 mm,0.59,Low,Pressure valve adjustment,Deep groove ball bearing (SKF 6205),Vikram Singh,Resolved,24429
+LOG-0058,2026-05-15 18:52:28,COMP-02,Screw element clearance excessive; volumetric efficiency low,1.11,Low,Sensor calibration,Temperature sensor (PT100),Sanjay Thakur,Resolved,27962
+LOG-0109,2026-05-16 18:40:28,COMP-01,Oil separator element saturated; oil carryover detected,32.24,High,Pressure valve adjustment,None,Priya Nair,Resolved,188160
+LOG-0002,2026-05-18 08:37:28,COMP-02,Screw element clearance excessive; volumetric efficiency low,6.75,Medium,Motor rewinding,Contactor and overload relay,Sunita Mehta,Resolved,55331
+LOG-0092,2026-05-21 13:41:28,CONV-01,Belt rip detected by rip detector; auto-stop triggered,0.98,Low,Pressure valve adjustment,Hydraulic hose assembly,Arvind Yadav,In-Progress,28587
+LOG-0085,2026-05-22 11:32:28,RM-01,"Edger motor vibration at 7.2 mm/s, threshold 5 mm/s",17.83,Medium,Electrical inspection,Pressure relief valve,Kavitha Rajan,Resolved,108155
+LOG-0035,2026-05-23 11:25:28,RM-01,Roll bearing temperature exceeded 95 deg C on drive side,0.8,Low,Cooling system flush,Hydraulic hose assembly,Ramesh Kumar,In-Progress,17842
+LOG-0089,2026-05-24 04:13:28,PUMP-01,Pump making grinding noise; foreign particle ingress suspected,0.68,Low,Bearing replacement,Mechanical seal kit,Neha Desai,Resolved,22608
+LOG-0015,2026-05-25 12:45:28,BF-01,Taphole clay failure; iron spillage risk,29.23,High,Belt alignment,Mechanical seal kit,Ramesh Kumar,In-Progress,166727
+LOG-0112,2026-05-25 16:44:28,PUMP-01,Cavitation noise observed; inlet suction pressure low,11.46,Medium,Belt alignment,Temperature sensor (PT100),Anita Sharma,Resolved,100762
+LOG-0061,2026-05-27 17:08:28,CONV-01,Conveyor belt tracking off-centre by 80 mm,11.8,Medium,Motor rewinding,Motor winding coil,Neha Desai,Resolved,64423
+LOG-0001,2026-05-28 17:09:28,COMP-02,Inlet air filter choked; differential pressure >50 mbar,11.19,Medium,Electrical inspection,Motor winding coil,Ramesh Kumar,Resolved,92470
+LOG-0120,2026-05-29 03:52:28,COMP-02,Pressure safety valve lifted prematurely at 8.2 bar,50.68,High,Oil refill,Hydraulic hose assembly,Anita Sharma,Resolved,268876
+LOG-0066,2026-05-29 21:21:28,BF-01,Abnormal burden distribution; stock descent irregular,5.73,Medium,Cooling system flush,Coupling spider insert,Suresh Patel,Resolved,109258
+LOG-0086,2026-05-30 17:57:28,COMP-02,Oil separator element saturated; oil carryover detected,3.79,Critical,Belt alignment,Hydraulic hose assembly,Ramesh Kumar,Pending,330307
+LOG-0052,2026-05-31 15:33:28,RM-02,Loopers not responding; strip tension lost,47.2,High,Bearing replacement,Deep groove ball bearing (SKF 6205),Kavitha Rajan,Resolved,216621
+LOG-0007,2026-06-01 04:14:28,CONV-01,Belt edge tear detected; 200 mm longitudinal split,5.81,Medium,Sensor calibration,Motor winding coil,Sunita Mehta,In-Progress,95623
+LOG-0030,2026-06-01 09:44:28,BF-02,Cooling stave showing elevated outlet temperature,46.05,High,Electrical inspection,Coupling spider insert,Ramesh Kumar,In-Progress,256930
+LOG-0018,2026-06-03 18:17:28,COMP-01,Discharge air temperature at 115 deg C; trip limit 120 deg C,3.93,Low,Cooling system flush,Vibration dampener pad,Neha Desai,Resolved,22332
+LOG-0028,2026-06-03 19:31:28,CONV-02,Drive reducer oil level critically low; less than 30%,61.68,High,Pressure valve adjustment,Mechanical seal kit,Arvind Yadav,Resolved,172979
+LOG-0016,2026-06-04 00:43:28,COMP-02,Screw element clearance excessive; volumetric efficiency low,41.29,High,Sensor calibration,Coupling spider insert,Kavitha Rajan,Pending,129396
+LOG-0053,2026-06-04 02:33:28,BF-02,Taphole clay failure; iron spillage risk,2.33,Low,Sensor calibration,Oil filter cartridge,Suresh Patel,Pending,24990
+LOG-0083,2026-06-05 10:03:28,RM-02,Roll gap deviation of +2.3 mm detected by AGC system,1.08,Critical,Motor rewinding,None,Anita Sharma,Resolved,407656
+LOG-0080,2026-06-07 03:36:28,PUMP-01,"Bearing overheating; temperature at 92 deg C, limit 85 deg C",47.86,High,Cooling system flush,Mechanical seal kit,Suresh Patel,Resolved,177822
+LOG-0107,2026-06-07 09:08:28,COMP-01,Pressure safety valve lifted prematurely at 8.2 bar,1.11,Critical,Sensor calibration,Coupling spider insert,Mohan Pillai,Resolved,329562
+LOG-0088,2026-06-08 13:40:28,RM-01,Water descaler pressure dropped to 120 bar; scale marks on strip,56.17,High,Sensor calibration,Pressure relief valve,Anita Sharma,In-Progress,131303
+LOG-0087,2026-06-09 03:56:28,COMP-02,Inlet air filter choked; differential pressure >50 mbar,17.19,Medium,Sensor calibration,None,Mohan Pillai,Pending,66232
+LOG-0060,2026-06-09 04:34:28,CONV-02,Belt joint failure; belt came off pulley,60.26,High,Bearing replacement,Motor winding coil,Priya Nair,Resolved,150408
+LOG-0046,2026-06-09 09:18:28,PUMP-02,Air ingress at suction flange; flow rate reduced,2.85,Critical,Pressure valve adjustment,Drive belt set,Ramesh Kumar,Resolved,423887
+LOG-0077,2026-06-09 21:56:28,BF-02,Stove dome temperature exceeded 1350 deg C alarm threshold,40.29,High,Sensor calibration,Deep groove ball bearing (SKF 6205),Ramesh Kumar,Pending,208531
+LOG-0021,2026-06-09 23:41:28,BF-01,Refractory lining erosion observed near hearth zone,4.0,Low,Electrical inspection,None,Kavitha Rajan,Resolved,18567
+LOG-0114,2026-06-10 05:20:28,PUMP-01,"Bearing overheating; temperature at 92 deg C, limit 85 deg C",6.25,Medium,Sensor calibration,Temperature sensor (PT100),Neha Desai,Resolved,92782
+LOG-0062,2026-06-10 06:05:28,CONV-01,Belt rip detected by rip detector; auto-stop triggered,3.87,Low,Motor rewinding,Motor winding coil,Arvind Yadav,In-Progress,27376
+LOG-0078,2026-06-10 10:54:28,RM-02,Water descaler pressure dropped to 120 bar; scale marks on strip,35.18,High,Pressure valve adjustment,Coupling spider insert,Kavitha Rajan,Pending,138884
+LOG-0071,2026-06-10 12:39:28,BF-02,Stove dome temperature exceeded 1350 deg C alarm threshold,2.79,Low,Bearing replacement,Contactor and overload relay,Anita Sharma,Pending,5028
+LOG-0014,2026-06-11 05:09:28,COMP-01,Inlet air filter choked; differential pressure >50 mbar,5.1,Medium,Bearing replacement,Pressure relief valve,Anita Sharma,Resolved,75747
+LOG-0056,2026-06-12 00:32:28,COMP-02,Screw element clearance excessive; volumetric efficiency low,20.18,Medium,Bearing replacement,Motor winding coil,Priya Nair,Resolved,111831
+LOG-0057,2026-06-13 10:56:28,BF-02,Taphole clay failure; iron spillage risk,1.48,Low,Oil refill,Pressure relief valve,Kavitha Rajan,Resolved,13419
+LOG-0013,2026-06-15 02:07:28,CONV-02,Belt rip detected by rip detector; auto-stop triggered,0.78,Low,Sensor calibration,Hydraulic hose assembly,Sunita Mehta,Resolved,24664

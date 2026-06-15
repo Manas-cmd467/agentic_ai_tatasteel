@@ -1,0 +1,183 @@
+INDUSTRIAL PUMPS AND COMPRESSORS — MAINTENANCE AND OPERATIONS GUIDE
+Tata Steel Maintenance Wizard — Knowledge Base Document
+Version: 2.1 | Effective Date: 01-Feb-2026 | Review Cycle: Annual
+===================================================================
+
+1. EQUIPMENT OVERVIEW
+======================
+
+This guide covers two classes of rotating equipment used in the Tata Steel plant utility and process systems:
+
+  PUMP-01 and PUMP-02  — Heavy-duty centrifugal slurry pumps (scale pit and slab descaling service)
+  COMP-01 and COMP-02  — Oil-injected twin-screw air compressors (instrument air and blast air service)
+
+Both equipment classes are monitored online by the Maintenance Wizard sensor platform and are subject to condition-based maintenance (CBM) protocols.
+
+
+2. CENTRIFUGAL SLURRY PUMP SPECIFICATIONS (PUMP-01 / PUMP-02)
+===============================================================
+
+  Pump Type            : Single-stage end-suction centrifugal, back-pull-out design
+  Duty                 : Slurry transport (mill scale, descaling water, sinter plant return water)
+  Design Flow Rate     : 500 m³/h at rated conditions
+  Design Head          : 80 m (total dynamic head)
+  Fluid Specific Gravity: 1.05–1.25 (slurry)
+  Solid Content (max)  : 20% by weight; particle size ≤ 25 mm
+  Pump Casing Material : High chrome white iron (27% Cr)
+  Impeller Material    : Hard chrome alloy (Type A05, hardness 650 HBN)
+  Shaft Seal           : Mechanical seal (Type 21 — John Crane or equivalent)
+  Drive Motor          : 110 kW, 6-pole, 975 rpm, IP55, TEFC
+  Coupling             : Flexible disc coupling (rated 1.25 × motor torque)
+  Bearing Arrangement  : Angular contact ball bearings (DE) + cylindrical roller (NDE)
+
+
+3. SCREW COMPRESSOR SPECIFICATIONS (COMP-01 / COMP-02)
+=======================================================
+
+  Compressor Type       : Oil-injected twin-screw, fixed-speed with inlet modulation
+  Capacity              : 1,000 Nm³/h free air delivery (at 10 bar, 20°C, 60% RH)
+  Discharge Pressure    : 10 bar (g) — adjustable 7–13 bar
+  Pressure Regulation   : Inlet valve modulation + blowdown valve
+  Drive Motor           : 160 kW, 4-pole, 1,485 rpm, IP55, VFD-compatible
+  Oil System            : Injection-cooled; integrated separator; oil volume 90 L
+  Oil Specification     : Shell Corena S4 R 46 (synthetic polyol ester base)
+  Cooling               : Air-cooled aftercooler + oil cooler (fin-tube, forced draught fan)
+  Air Treatment Downstream: Refrigeration dryer (dewpoint +3°C), coalescing filter (0.01 micron)
+
+
+4. CRITICAL SENSOR THRESHOLDS
+==============================
+
+4.1 Centrifugal Slurry Pumps (PUMP-01 / PUMP-02)
+  Sensor                     Normal Range    Warning         Critical Action
+  Bearing Temperature (DE)   30–65°C         > 80°C          > 95°C — trip pump
+  Bearing Temperature (NDE)  30–60°C         > 75°C          > 90°C — trip pump
+  Vibration (RMS, casing)    0.5–2.5 mm/s    > 3.0 mm/s      > 5.5 mm/s — trip pump
+  Inlet Pressure             0.8–1.2 bar (g) Drop > 0.5 bar  Drop > 0.8 bar — cavitation risk
+  Seal Water Flow            ≥ 5 L/min       < 3 L/min       < 1 L/min — seal failure imminent
+  Motor Current              60–85% FLA      > 95% FLA       Overload relay trips
+
+4.2 Screw Compressors (COMP-01 / COMP-02)
+  Sensor                     Normal Range    Warning          Critical Action
+  Discharge Temperature      70–88°C         > 95°C           > 115°C — trip compressor
+  Oil Pressure (after pump)  3.0–4.5 bar     < 2.5 bar        < 2.0 bar — trip compressor
+  Oil Temperature            60–80°C         > 90°C           > 100°C — trip compressor
+  Vibration (main housing)   0.5–2.5 mm/s    > 3.5 mm/s      > 6.0 mm/s — trip compressor
+  Separator Differential P   0.0–0.8 bar     > 1.0 bar        > 1.2 bar — replace element
+  Air-End Bearing Temp       40–75°C         > 85°C           > 100°C — trip compressor
+
+
+5. COMMON FAULTS AND DIAGNOSIS
+================================
+
+5.1 PUMP CAVITATION
+--------------------
+Cavitation occurs when suction head falls below the NPSH required (NPSHr = 4.5 m for PUMP-01/02), causing vapour bubble collapse on the impeller and casing surfaces.
+
+Symptoms:
+  - Crackling, rattling noise resembling gravel in pump casing
+  - Vibration spike at broadband frequencies (not synchronous)
+  - Discharge pressure fluctuation (±5% or more)
+  - Flow meter reading intermittent drops
+  - Impeller erosion visible during inspection — pitting on suction side of vanes
+
+Causes: Blocked suction strainer; sump level too low; suction pipe leak; excessive speed; slurry density increase beyond design.
+
+Troubleshooting Flowchart (Pump Cavitation):
+  START: Is noise/vibration type consistent with cavitation? (crackling, not tonal)
+    YES --> Check sump level. Is sump level above minimum (>0.8 m above pump centreline)?
+              NO  --> Increase sump level. Does noise stop? YES --> Resolved. NO --> Continue.
+              YES --> Check suction strainer differential pressure. Is dP > 0.15 bar?
+                        YES --> Clean strainer. Recheck symptoms.
+                        NO  --> Check suction pipe for air leaks (pressurize with N2; soap test). Leak found?
+                                  YES --> Repair flange gasket or valve gland. Recheck.
+                                  NO  --> Check slurry SG (is it > 1.25?). YES --> Reduce feed rate. NO --> Consult engineer.
+  END
+
+5.2 MECHANICAL SEAL FAILURE
+-----------------------------
+Symptoms: Visible liquid drip at seal gland (>10 drops/min = failure), seal face discolouration, bearing housing becomes wet.
+Causes: Loss of seal water flush, slurry ingress into seal faces, running dry during start-up.
+Action: Stop pump; confirm LOTO; replace seal cartridge assembly. Inspect shaft sleeve for wear. Re-establish seal water before restart.
+
+5.3 IMPELLER WEAR
+------------------
+Symptoms: Gradual flow drop (>15% below design) at rated speed and head; increased power consumption.
+Cause: Abrasive wear by mill scale and silica particles.
+Action: Inspect impeller clearance (front plate gap > 3 mm = worn). Replace impeller. Measure wear rate — if campaign < 1,800 h, review slurry sizing.
+
+5.4 COMPRESSOR HIGH OIL CARRYOVER
+-----------------------------------
+Symptoms: Oil visible in downstream airline; compressed air sample shows oil > 5 ppm; separator differential pressure elevated.
+Cause: Clogged separator element or ruptured separator element (rupture allows oil bypass).
+Action: Replace separator element. Check upstream oil cooler for leaks. Verify oil level is not overfilled.
+
+5.5 UNLOADING VALVE MALFUNCTION
+---------------------------------
+Symptoms: Compressor hunts between load and unload rapidly (short-cycling < 30 s); excessive power consumption.
+Cause: Leaking inlet valve seat, worn pilot valve, incorrect pressure band setting.
+Action: Adjust pressure band (minimum 1.5 bar differential between load and unload set-points). If hunting continues, rebuild or replace inlet valve assembly.
+
+
+6. VIBRATION ANALYSIS GUIDELINES
+===================================
+
+For rotating equipment, the following frequency signatures indicate common fault types. All measurements are taken at the bearing housing, radial direction, with accelerometer sensitivity 100 mV/g.
+
+  Fault Type                     Dominant Frequency Signature
+  Unbalance (impeller/rotor)     1× Running speed (dominant radial)
+  Misalignment (coupling)        2× Running speed; axial component elevated
+  Bearing inner race defect      BPFI = n/2 × RPM/60 × (1 + Bd/Pd × cos α)
+  Bearing outer race defect      BPFO = n/2 × RPM/60 × (1 − Bd/Pd × cos α)
+  Cavitation                     Broadband noise floor elevation; no tonal peaks
+  Looseness (foundation/foot)    Sub-harmonics 0.5×, 1×, 2× RPM; phase randomness
+
+Where: n = number of rolling elements, Bd = ball diameter, Pd = pitch diameter, α = contact angle.
+
+Trending: Collect monthly baseline readings. Alert threshold = 2× baseline or per Section 4 limits, whichever is reached first.
+
+
+7. LUBRICATION SCHEDULE
+=========================
+
+Centrifugal Slurry Pumps:
+  Drive-end bearing     : Re-grease every 30 days with Shell Gadus S2 V220 (NLGI 2), 30 g per grease point
+  Non-drive-end bearing : Re-grease every 30 days, 20 g per point
+  Coupling              : Inspect flexible element every 6 months; replace every 3 years
+  Seal water            : Check flow (5 L/min) every shift; clean strainer monthly
+
+Screw Compressors:
+  Compressor oil change : Every 4,000 operating hours — use Shell Corena S4 R 46 (synthetic)
+  Oil filter element    : Replace every 2,000 hours or when dP > 1.0 bar
+  Air filter element    : Replace every 2,000 hours or monthly in dusty environments
+  Oil separator element : Replace every 4,000 hours or when dP > 1.2 bar
+  Air-end bearings      : Factory packed; inspect at 20,000 h; replace at 40,000 h or at overhaul
+
+
+8. SPARE PARTS CRITICALITY MATRIX
+===================================
+
+Classification: A = Must stock on site; B = Supplier frame agreement (< 1 week delivery); C = Standard catalogue (2–4 weeks)
+
+PUMP SPARE PARTS:
+  Part                               Class   Stock Qty
+  Impeller (hard chrome alloy)       A       2 per pump
+  Mechanical seal cartridge (T21)    A       2 per pump
+  Bearing set (DE + NDE)             A       1 set per pump
+  Casing liner (side, back plate)    A       1 set per pump
+  Shaft sleeve (chrome, hardened)    B       1 per pump
+  Coupling flexible element          B       1 set
+  Impeller lock nut with washer      C       2 per pump
+
+COMPRESSOR SPARE PARTS:
+  Part                               Class   Stock Qty
+  Oil separator element              A       2 per compressor
+  Oil filter element                 A       4 per compressor
+  Air filter element                 A       4 per compressor
+  Inlet valve assembly               A       1 complete set
+  Minimum pressure valve kit         B       1 set
+  Oil cooler (complete)              B       1 (shared between COMP-01/02)
+  Screw rotor set                    B       1 set (shared spare, 6-week lead time)
+  Thermostat valve (oil temp control) C      2 per compressor
+
+All critical spares (Class A) must be replenished within 30 days of use. Document all parts consumption in the CMMS (Computerized Maintenance Management System).

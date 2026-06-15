@@ -1,0 +1,179 @@
+BELT CONVEYOR (CONV-SERIES) MAINTENANCE GUIDE
+Tata Steel Maintenance Wizard — Knowledge Base Document
+Version: 1.9 | Effective Date: 01-Apr-2026 | Review Cycle: Annual
+==================================================================
+
+1. EQUIPMENT SPECIFICATIONS — CONV-01 AND CONV-02
+===================================================
+
+Both conveyor systems are heavy-duty overland belt conveyors handling sinter, coke, iron ore, and coal in the raw materials handling yard and stockhouse.
+
+  Belt Width               : 1,200 mm (ST-2500 steel-cord belt)
+  Belt Speed               : 2.5 m/s (design); adjustable 1.5–3.0 m/s via VFD
+  Rated Conveying Capacity : 800 tonnes per hour
+  Belt Length (conveyor)   : 450 m centre-to-centre
+  Drive Arrangement        : Single drive pulley at head end; lagged rubber surface
+  Drive Motor Power        : 55 kW, 4-pole, 1,475 rpm (direct-on-line with VFD)
+  Gearbox                  : Parallel shaft helical, ratio 22.5:1, oil-lubricated
+  Takeup System            : Gravity counterweight takeup (travel 1,500 mm)
+  Idler Spacing            : Carrying side — 1.0 m; Return side — 3.0 m
+  Idler Configuration      : 35° troughing (3-roll garland set, CEMA Class D)
+  Skirt Board Length       : 4.0 m at each loading chute
+  Emergency Stop           : Pull-rope switches (both sides, full length) + belt-slip detector
+
+
+2. CRITICAL MONITORING POINTS AND THRESHOLDS
+==============================================
+
+Monitoring Point             Normal Range        Warning              Critical / Action
+Belt Slip (vs drive pulley)  0–3%                > 5%                 > 8% — trip conveyor
+Idler Running Temperature    Ambient +15°C max    —                    > 80°C — replace idler (fire risk)
+Belt Tension (takeup side)   15–25 kN            < 12 kN or > 28 kN  < 10 kN — slip risk; > 30 kN — belt edge damage
+Drive Pulley Vibration       0.3–1.5 mm/s (RMS)  > 2.5 mm/s          > 4.5 mm/s — trip and inspect
+Belt Mis-tracking (wander)   Within ±50 mm        > 75 mm (alarm)     > 100 mm — trip (edge contact damage)
+Motor Current                40–75% FLA           > 90% FLA           Overload relay trips
+Gearbox Oil Temperature      40–75°C              > 85°C              > 95°C — trip gearbox
+
+
+3. COMMON FAULTS — DIAGNOSIS AND REPAIR
+========================================
+
+3.1 BELT SLIP
+--------------
+Causes:
+  a) Inadequate belt tension — counterweight too light, takeup seized
+  b) Wet surface on drive pulley — rain, process water, condensation
+  c) Overloading — feed rate exceeds conveyor design capacity
+  d) Lagging wear on drive pulley — smooth drum reduces friction
+
+Adjustment Procedure:
+  Step 1 : Identify slip reading from belt-slip detector (% differential between belt speed sensor and pulley tachometer).
+  Step 2 : Check counterweight position — ensure takeup trolley is free to travel (lubricate guide rails).
+  Step 3 : If takeup is at travel limit: add counterweight mass (calculate required tension: T₁/T₂ ≥ e^(μθ); μ = 0.35 wet).
+  Step 4 : Inspect drive pulley lagging — if groove depth < 3 mm (of 12 mm original), arrange re-lagging during next shutdown.
+  Step 5 : Reduce feed rate if overload is confirmed by motor current logging.
+  Step 6 : Apply traction compound (Fenaplast or equivalent) as temporary measure only — investigate root cause.
+
+3.2 IDLER SEIZURE
+------------------
+Detection Method: Thermal imaging camera scan during conveyor operation (monthly); observe belt surface for burn marks or flat-spot impressions in rubber.
+
+On-the-Run Replacement Technique (where belt speed ≤ 1.5 m/s):
+  Step 1 : Identify seized idler location precisely (mark on frame with chalk).
+  Step 2 : Obtain replacement idler (same shell diameter, same seal type) and idler removal tool.
+  Step 3 : Reduce conveyor speed to minimum using VFD. Inform control room.
+  Step 4 : Use idler lifter tool to raise belt slightly off the seized idler — a second technician stabilizes.
+  Step 5 : Slide seized idler axially out of frame bracket (unscrew wing-nut retaining clips).
+  Step 6 : Insert new idler — confirm free rotation before releasing belt weight.
+  Step 7 : Restore speed. Document replacement in conveyor idler log (location, date, idler serial no.).
+  NOTE: If belt speed exceeds 1.5 m/s or material build-up prevents safe access — STOP conveyor first.
+
+3.3 BELT MIS-TRACKING
+----------------------
+Causes: Off-centre loading, belt damage or splice misalignment, idler misalignment, pulley crown wear, wind loading on return strand.
+
+Step-by-Step Tracking Adjustment:
+  Step 1 : Observe which direction belt wanders — record consistently (not intermittent). Belt tracks toward the LOW-tension side.
+  Step 2 : Check loading point — ensure material is centred within ±100 mm of belt centreline. Adjust chute lip if needed.
+  Step 3 : Identify which 3-roll idler set is closest to the wander point.
+  Step 4 : To correct tracking, advance the idler in the direction of mis-tracking (leading-edge principle): if belt moves LEFT, advance the LEFT end of the idler by rotating it 2–3° in the direction of belt travel.
+  Step 5 : Run belt and observe — allow 3–5 minutes for each adjustment to take effect.
+  Step 6 : If training idlers are installed: engage training idler tilt in correct direction.
+  Step 7 : If tracking problem persists after multiple adjustments — inspect all tail and head pulley alignment with laser tool.
+
+3.4 BELT TEAR
+--------------
+Emergency Repair Procedure:
+  Step 1 : Stop conveyor immediately (pull-rope or operator stop). Isolate and LOTO.
+  Step 2 : Assess tear extent — longitudinal, transverse, or both. Photograph for record.
+  Step 3 : For short transverse tears (< 200 mm): apply vulcanised repair patch (Flexco or Dunlop repair kit) — clean belt surface with MEK solvent, apply repair compound under pressure for 30 minutes.
+  Step 4 : For longitudinal tears (> 300 mm or full width) — stop feeding conveyor; evacuate material. Fit mechanical belt clamps either side of tear to prevent propagation. Contact belt specialist for emergency vulcanising team.
+
+Permanent Repair Guide:
+  - Hot vulcanising: preferred method; restores 95% of original belt strength; requires vulcanising press and heat.
+  - Cold bond repair: field kit (2-part urethane adhesive); restores ~70% strength; suitable for temporary fix.
+  - Mechanical splice (Flexco R5 or Mato): quick repair for thick belt (ST-2500); splice rated to 70% of belt breaking strength; inspect splice weekly after installation.
+
+
+4. INSPECTION SCHEDULE
+========================
+
+Daily Walkthrough Checklist (Operator, each shift):
+  [ ] Listen for unusual noise — seized idlers, belt flapping, drive rumble
+  [ ] Check belt alignment (centreline) at head and tail pulleys
+  [ ] Verify belt tension is within normal (check takeup position visually)
+  [ ] Inspect loading chute skirt seals — no spillage or carry-back
+  [ ] Check gearbox and motor housing for heat or oil leaks
+  [ ] Confirm all pull-rope emergency stops reset correctly after last stop
+
+Weekly Checks (Maintenance Technician):
+  [ ] Thermal scan of all idlers (infrared camera or contact thermometer)
+  [ ] Lubricate takeup trolley guide rails and bearing housings (NLGI 2 grease)
+  [ ] Inspect drive pulley lagging — probe groove depth at 5 points across belt width
+  [ ] Check counterweight rope anchors — no wire rope strand broken
+  [ ] Inspect belt top surface for cuts, fraying, or edge damage
+
+Monthly Inspection (Maintenance Engineer):
+  [ ] Laser alignment check on drive and tail pulleys
+  [ ] Oil sample from gearbox (target: ISO 46 EP320; check for water and metal particles)
+  [ ] Full belt inspection — walk full length, both sides; document any splice condition
+  [ ] Measure belt sag between idlers on carrying side (target: ≤ 1.5% of idler pitch)
+  [ ] Review belt-slip detector calibration — test with known-speed reference
+  [ ] Torque check on all drive pulley shaft keys and coupling bolts
+
+
+5. LUBRICATION POINTS
+======================
+
+  Component               Lubricant                    Interval           Quantity
+  Drive gearbox           Shell Omala S4 GX 320 (EP)   6 months or 3000h  See gearbox nameplate (~15 L)
+  Take-up bearing (conv.) NLGI 2 lithium complex grease Monthly            30 g per bearing
+  Snub pulley bearings    NLGI 2 lithium complex grease Monthly            20 g per bearing
+  Bend pulley bearings    NLGI 2 lithium complex grease Monthly            20 g per bearing
+  Drive motor bearings    Manufacturer-specified grease 6 months           Per nameplate
+  Tail pulley bearings    NLGI 2 lithium complex grease Monthly            30 g per bearing
+
+NOTE: Do not mix grease types. If grease type is changed, flush old grease completely before refilling.
+
+
+6. EMERGENCY RUNAWAY PROCEDURE (BELT EMERGENCY STOP SYSTEMS)
+=============================================================
+
+The belt conveyors are equipped with three independent emergency stop systems:
+
+  a) Pull-Rope Switches: Continuous steel wire rope runs the full length on both sides of the conveyor. Pulling or breaking the rope at any point trips the drive. Reset requires manual key-release at the tripped switch location.
+
+  b) Belt Slip Detector: Speed sensor on non-driven snub pulley compares to drive pulley speed. >8% slip triggers an automatic trip.
+
+  c) Belt Mis-tracking Switch: Roller-type limit switch at head and tail end — if belt contacts roller (>100 mm deviation), conveyor trips.
+
+  d) Zero-Speed Switch: On gearbox output — trips if belt stops while motor is still running (blocked chute or breakage).
+
+Emergency Action for Runaway (uncontrolled belt acceleration):
+  Step 1 : Activate nearest pull-rope immediately.
+  Step 2 : If pull-rope fails: isolate motor using local isolator (red handle on motor panel).
+  Step 3 : Do NOT attempt to step onto or block belt manually.
+  Step 4 : Alert all personnel in path of material spillage.
+  Step 5 : After stop, investigate brake condition and VFD overspeed protection before restart.
+
+
+7. SPARE PARTS INVENTORY RECOMMENDATIONS
+==========================================
+
+  Category               Part                               Qty to Stock
+  CRITICAL (A)           Drive pulley bearing set            1 set
+  CRITICAL (A)           Gearbox coupling element            2 sets
+  CRITICAL (A)           Belt repair kit (cold bond)         4 kits
+  CRITICAL (A)           Mechanical belt splice (Flexco R5)  10 sets
+  IMPORTANT (B)          Carrying idler (troughing, 5-roll)  20 sets
+  IMPORTANT (B)          Return idler (flat, rubber disc)    10
+  IMPORTANT (B)          Drive pulley lagging sheets         2 sets
+  IMPORTANT (B)          Belt mis-tracking switch            2
+  ROUTINE (C)            Grease cartridges (NLGI 2)          24
+  ROUTINE (C)            Gearbox oil (EP320, 20 L drum)      2 drums
+  ROUTINE (C)            Skirt rubber sealing strip          50 metres
+  ROUTINE (C)            Pull-rope switch (complete)         2
+
+Reorder Policy: Replenish Class A items within 14 days of use. Class B within 30 days. Conduct stock audit every quarter and before monsoon season (June–September), as wet conditions increase belt-related incidents significantly.
+
+Document Control: This guide is maintained by the Raw Materials Handling Engineering team. Last updated by: Maintenance Engineering, Tata Steel — June 2026.

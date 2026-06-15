@@ -1,0 +1,185 @@
+ROLLING MILL (RM-SERIES) MAINTENANCE STANDARD OPERATING PROCEDURE
+Tata Steel Maintenance Wizard — Knowledge Base Document
+Version: 2.7 | Effective Date: 15-Mar-2026 | Review Cycle: Annual
+=================================================================
+
+1. EQUIPMENT SPECIFICATIONS — RM-01 AND RM-02
+===============================================
+
+Both rolling mills in service are 4-high reversing mills designed for hot flat rolling of steel slabs into strip and plate product.
+
+Key Design Data:
+  Mill Type                  : 4-High Reversing Hot Mill
+  Work Roll Diameter         : 650 mm (new) / 590 mm (minimum before change)
+  Backup Roll Diameter       : 1,350 mm
+  Roll Body Length           : 2,100 mm
+  Maximum Rolling Force      : 40 MN
+  Drive Motor Power          : 8 MW per side (16 MW total)
+  Motor Speed Range          : 0–180 rpm (spindle)
+  Rolling Speed              : 0–8 m/s (entry and delivery)
+  Maximum Slab Width         : 1,900 mm
+  Maximum Slab Thickness     : 250 mm (entry)
+  Minimum Strip Thickness    : 3.0 mm (exit, hot rolled)
+  Hydraulic Gauge Control    : AGC (Automatic Gauge Control) servo-hydraulic
+  Cooling Water Flow         : 500 L/min (roll body cooling per side)
+
+
+2. CRITICAL OPERATING PARAMETERS AND THRESHOLDS
+=================================================
+
+Parameter                     Normal Range         Warning Threshold       Critical Threshold
+Roll Gap Accuracy              ±0.05 mm            Deviation > ±0.08 mm    Deviation > ±0.15 mm
+Rolling Speed                  0–8 m/s             —                       Overspeed relay at 8.5 m/s
+Roll Cooling Water Flow        450–550 L/min        < 400 L/min             < 350 L/min (trip)
+Maximum Roll Force             < 40 MN             > 36 MN (operator alert) 40 MN (force limit trip)
+Hydraulic System Pressure      240–270 bar          > 280 bar               > 310 bar (trip)
+Roll Bearing Temperature       35–65°C              > 75°C                  > 90°C (trip)
+Motor Current (% of rated)     50–85%               > 95%                   Overload relay trips
+AGC Servo Valve Response       < 50 ms              > 80 ms                 > 120 ms (AGC fault)
+
+
+3. COMMON FAULTS — DIAGNOSIS AND REPAIR PROCEDURES
+====================================================
+
+3.1 ROLL BEARING FAILURE
+-------------------------
+Symptoms:
+  - Bearing temperature alarm (>75°C on RTD embedded in chock)
+  - Vibration increase: spectral peak at rolling element frequency (BPFO/BPFI)
+  - Noise increase — metallic rumble or high-frequency screeching
+  - Lubricant discolouration (grey metallic particles in grease sample)
+  - Roll gap scatter — bearing clearance increase causes gauge variation
+
+Causes:
+  a) Lack of lubrication — clogged grease line or long re-greasing interval
+  b) Overload — rolling force exceeding bearing dynamic capacity
+  c) Rolling contact fatigue — spalling after design life (typically 8,000–12,000 h)
+  d) Water ingress — cooling water contaminating lubricant
+
+Step-by-Step Bearing Replacement Procedure:
+  Step 1 : Raise rolling force to zero; retract roll gap to maximum.
+  Step 2 : Initiate roll change — slide work roll chock assembly to the operator-side roll-change table using the roll-changing device.
+  Step 3 : Apply Lockout/Tagout (LOTO) on main drive, hydraulic power unit, and cooling water supply.
+  Step 4 : Transfer chock assembly to bearing workshop using overhead crane.
+  Step 5 : Heat chock to 80°C in oven; press out inner race using hydraulic press (30-tonne capacity).
+  Step 6 : Clean chock bore with lint-free cloth and solvent; inspect for pitting or fretting.
+  Step 7 : Install new bearing (SKF 240/630 ECAK30/W33 or equivalent); heat bearing to 100°C; press fit.
+  Step 8 : Pack with approved grease (SKF LGEP 2, 500 g); install seals and seal cover.
+  Step 9 : Reassemble chock on roll; verify roll neck fit (H7/k6 tolerance).
+  Step 10: Return roll to mill; re-establish roll gap reference; verify temperature within 15 minutes of restart.
+
+3.2 ROLL GAP DEVIATION (GAUGE FAILURE)
+----------------------------------------
+Causes:
+  a) Thermal expansion of work rolls — uneven cooling water distribution
+  b) Increased bearing clearance after wear
+  c) Roll wear — differential wear profile across roll body
+  d) AGC servo valve degradation — slow response or valve overlap change
+
+Calibration Procedure:
+  Step 1 : Stop rolling; move to pass-line position.
+  Step 2 : Insert 5 mm calibration block between work rolls; record AGC position sensor reading.
+  Step 3 : Compare to reference value (set during last certified calibration).
+  Step 4 : If deviation > 0.08 mm: inspect hydraulic servo valve response (inject test signal to servo amplifier).
+  Step 5 : Check LVDT (Linear Variable Differential Transformer) sensor: clean probe, check linearity across full stroke.
+  Step 6 : After servo valve replacement or cleaning, re-calibrate at 5 mm, 20 mm, 50 mm, and 150 mm gap settings.
+  Step 7 : Document calibration certificate with technician signature and date.
+  Step 8 : Perform trial rolls on sacrificial slab; measure exit thickness with calibrated gauge; confirm within tolerance.
+
+3.3 HYDRAULIC SYSTEM LEAK
+---------------------------
+Inspection Checklist (conduct weekly during rolling plan changeover):
+  [ ] Inspect all HP hose assemblies (280 bar rated) for swelling, abrasion, or kinking
+  [ ] Check AGC cylinder gland seals for weeping (wipe clean; inspect after 15 min operation)
+  [ ] Inspect proportional valve manifolds for external seepage
+  [ ] Check hydraulic tank level — sudden drop indicates active leak
+  [ ] Sample hydraulic oil (ISO 46 HVI) — check for water contamination (>500 ppm water = replace)
+
+Seal Replacement Procedure (AGC Cylinder):
+  Step 1 : Depressurize hydraulic circuit — vent accumulator; verify zero pressure on gauge.
+  Step 2 : Apply LOTO on hydraulic power unit.
+  Step 3 : Remove cylinder end cap (torque 380 Nm on M42 bolts).
+  Step 4 : Extract piston rod; lay on clean wooden supports.
+  Step 5 : Remove worn seals (Parker Parbak + PTFE guide ring set).
+  Step 6 : Clean groove with lint-free cloth; inspect for scratches (max permissible 0.3 mm depth).
+  Step 7 : Fit new seals — ensure correct orientation (lip seals are directional).
+  Step 8 : Lubricate seals with clean system oil before assembly.
+  Step 9 : Reassemble cylinder; torque to specification; pressure test at 1.25 × working pressure.
+
+3.4 MOTOR OVERLOAD
+-------------------
+Load Analysis Procedure:
+  Step 1 : Retrieve rolling schedule data — identify pass sequence causing high current.
+  Step 2 : Plot motor current vs. rolling force for all passes; identify outlier passes.
+  Step 3 : Check roll pass schedule against material grade specification — verify reduction ratio per pass.
+  Step 4 : If overload is structural (material grade mismatch): adjust pass schedule — increase pass count, reduce per-pass reduction.
+  Step 5 : If overload is intermittent (slab cobble, roll bite shock): check roll cooling and billet preheat temperature.
+
+VFD Parameter Adjustment:
+  - Current limit setpoint: verify at 105% of motor rated current (do not exceed 110%)
+  - Acceleration ramp: increase from 8 s to 12 s if inrush causes trips on acceleration
+  - Overcurrent protection: verify relay setting is 1.15 × FLA (Full Load Amps)
+  - Thermal model in VFD: verify motor parameters (resistance, inductance) match nameplate
+
+
+4. PREDICTIVE MAINTENANCE SCHEDULE
+=====================================
+
+Daily Checks (Operator, each shift):
+  - Record all alarm occurrences in the DCS alarm log
+  - Visual inspection: look for oil on mill floor, steam, or unusual noise
+  - Check cooling water manifold flow meters — compare to previous shift
+  - Verify roll gap position repeats correctly after each pass reversal
+  - Check hydraulic tank level — must be within ±50 mm of normal level mark
+
+Weekly Checks (Maintenance Technician):
+  - Grease all roll chock bearings (re-greasing interval: 60 operating hours)
+  - Vibration reading on motor non-drive end and drive end bearings
+  - Inspect all mill stand bolts — check for any loose or cracked foundations
+  - Function test of all force limit trips and emergency stop circuits
+  - Clean oil filter differential pressure indicators; replace if ΔP > 3 bar
+
+Monthly Checks (Maintenance Engineer):
+  - Oil sample analysis (hydraulic, gearbox, spindle)
+  - Full calibration check of AGC system (as per Section 3.2)
+  - Insulation resistance test on main drive motor windings (>100 MΩ @ 1,000 V)
+  - Inspect roll cooling nozzles — replace clogged nozzles (flow test: each nozzle ≥ 5 L/min)
+  - Ultrasonic thickness check of hydraulic hoses at wear-prone locations
+
+
+5. ROLL CHANGE PROCEDURE
+==========================
+
+Required Personnel: 2 qualified roll-change technicians + 1 crane operator
+Estimated Time: 45–60 minutes (work roll pair)
+
+Step 1  : Inform Rolling Mill Operator. Stop rolling. Open roll gap to maximum.
+Step 2  : Apply LOTO on both main drive motors. Verify zero energy (check with test lamp).
+Step 3  : Disconnect cooling water hoses on both operator side and drive side.
+Step 4  : Uncouple drive spindles — loosen spindle lock nuts (use torque multiplier).
+Step 5  : Position roll-change carriage at mill stand entrance. Align rail height.
+Step 6  : Push used work roll chock assembly onto carriage using the pusher cylinder.
+Step 7  : Transfer used rolls to roll shop via overhead crane — attach only to certified roll lifting beams.
+Step 8  : Bring pre-ground replacement rolls from roll shop (confirm ground diameter and profile on paperwork).
+Step 9  : Slide new roll pair into mill stand. Engage spindles. Torque spindle lock nuts to 850 Nm.
+Step 10 : Reconnect cooling water hoses. Open water supply; check for leaks.
+Step 11 : Remove LOTO. Inch drive motor to verify correct rotation direction.
+Step 12 : Set reference roll gap using calibration block. Document in roll change log.
+Step 13 : Perform trial roll on sacrificial slab. Verify strip thickness and flatness within specification.
+
+
+6. SAFETY LOCKOUT/TAGOUT (LOTO) PROCEDURE
+==========================================
+
+  LOTO Standard: IS/IEC 60204-1 compliant; mandatory for all rolling mill maintenance work.
+
+  Step 1 : Inform all affected personnel and control room of LOTO initiation.
+  Step 2 : Shut down equipment using normal stopping procedure.
+  Step 3 : Identify all energy isolation points: main 11kV disconnect switch, hydraulic power unit isolator, cooling water stop valve, pneumatic supply isolation valve.
+  Step 4 : Operate each isolation device to the OFF position.
+  Step 5 : Apply personal padlock and danger tag to each isolation point. Each technician applies their own lock.
+  Step 6 : Vent residual pressure from hydraulic accumulators (verify zero on pressure gauge).
+  Step 7 : Block or restrain any gravity-hazard components (e.g., block under roll change carriage).
+  Step 8 : Verify zero energy state: attempt start from operator desk — confirm no movement.
+  Step 9 : Work may now proceed. Do not remove locks except by the person who applied them.
+  Step 10: On work completion, reassemble equipment, remove all tools, then remove personal locks in reverse order.
