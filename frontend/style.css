@@ -124,9 +124,16 @@ ul, ol {
   list-style: none;
 }
 
-img, svg {
+img, svg, canvas {
   display: block;
   max-width: 100%;
+  height: auto; /* Prevent stretching */
+}
+
+/* Apply a default constraint to all SVGs missing explicit dimensions to prevent them from exploding */
+svg:not([width]):not([height]) {
+  width: 24px;
+  height: 24px;
 }
 
 /* ============================================================
@@ -620,8 +627,8 @@ img, svg {
 
 /* KPI Icon */
 .kpi-icon {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
@@ -636,8 +643,8 @@ img, svg {
 .kpi-anomalies .kpi-icon { background: rgba(249,115,22,0.15); color: var(--orange); }
 
 .kpi-icon svg {
-  width: 22px;
-  height: 22px;
+  width: 18px !important;
+  height: 18px !important;
 }
 
 .kpi-value {
@@ -2858,6 +2865,8 @@ input[type="checkbox"] {
 
 .health-ring svg {
   transform: rotate(-90deg);
+  width: 60px !important;
+  height: 60px !important;
 }
 
 .health-ring-text {

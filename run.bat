@@ -23,9 +23,13 @@ if %errorlevel% neq 0 (
     set PYTHON_CMD=py
     where py >nul 2>nul
     if %errorlevel% neq 0 (
-        echo [ERROR] Python not found! Please install Python 3.9+ from https://python.org
-        pause
-        exit /b 1
+        if exist "C:\ProgramData\anaconda3\python.exe" (
+            set PYTHON_CMD="C:\ProgramData\anaconda3\python.exe"
+        ) else (
+            echo [ERROR] Python not found! Please install Python 3.9+ from https://python.org
+            pause
+            exit /b 1
+        )
     )
 )
 
