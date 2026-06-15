@@ -13,7 +13,7 @@ load_dotenv()
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from knowledge_base.vector_store import VectorStore
 
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-pro")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
 RAG_TOP_K = int(os.getenv("RAG_TOP_K", 5))
 
 SYSTEM_PROMPT = """You are the Maintenance Wizard, an expert AI assistant specialized in industrial equipment maintenance for Tata Steel's steel manufacturing plants.
